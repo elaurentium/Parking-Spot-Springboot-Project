@@ -12,6 +12,8 @@ public class ParkingSpotDto {
     @NotBlank
     private String brandCar;
     @NotBlank
+    private String responsibleName;
+    @NotBlank
     private String modelCar;
     @NotBlank
     private String colorCar;
@@ -74,5 +76,13 @@ public class ParkingSpotDto {
 
     public void setBlock(String block) {
         this.block = block;
+    }
+
+    public String getResponsibleName() {
+        return responsibleName;
+    }
+
+    public void setResponsibleName(String responsibleName) {
+        this.responsibleName = responsibleName;
     }
 }
